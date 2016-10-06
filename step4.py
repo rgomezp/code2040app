@@ -17,9 +17,6 @@ for item in array:
 	if item[0:3]!=prefix[0:3]:
 		newArray.append(item)
 
-newArray = [x.encode('UTF8') for x in newArray] 	#convert to ascii
-
-
 print "prefix:", prefix
 print "array:", array
 print "new array:", newArray
