@@ -9,9 +9,7 @@ data = r.json()
 prefix = data['prefix']
 array = data['array']
 
-array = [x.encode('UTF8') for x in array]	#convert to ascii
-
-newArray = [] 	#array to which copy items with given prefix
+newArray = [] 	#array to which copy items without given prefix
 
 for item in array:
 	if item[0:3]!=prefix[0:3]:
